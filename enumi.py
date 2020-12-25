@@ -65,7 +65,7 @@ def auto_gobuster(target_ip, nmap_results):
 
 def nmap_all_scan(target_ip):
     # scan all ports
-    os.system("nmap -p- -A -sC -T2 -oN nmap-all-scan.txt " + IP)
+    os.system("nmap -p- -A -sC -T2 -oN nmap-all-scan.txt " + target_ip)
 
 
 def main():
@@ -75,7 +75,7 @@ def main():
     automatic = input("Would you like an automatic scan(y/n)? ")
 
     #start nmap scan
-    nmap_results = str(os.system("nmap -A -sC -T4 -oN nmap-aggresive-scan.txt " + IP + " -v"))
+    nmap_results = str(os.system("nmap -A -sC -T4 -oN nmap-aggresive-scan.txt " + target_ip + " -v"))
 
     if automatic not in yes:
         manual_mode(target_ip, nmap_results)
