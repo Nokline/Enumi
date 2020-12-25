@@ -1,8 +1,6 @@
 
 import os
 import webbrowser
-from threading import Thread
-import nmap3
 
 banner = """
 ███████╗███╗   ██╗██╗   ██╗███╗   ███╗██╗
