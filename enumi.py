@@ -1,7 +1,5 @@
 import os
 import webbrowser
-from threading import Thread
-# import nmap3 # add to requirements.txt once it is used
 
 BANNER = """
 ███████╗███╗   ██╗██╗   ██╗███╗   ███╗██╗
